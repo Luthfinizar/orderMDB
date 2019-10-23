@@ -1,0 +1,94 @@
+{{define "base.html"}}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{template "title" .}}</title>
+    <meta http-equiv="X-UA-Compatible" content="IS-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/fonts/beyond_the_mountains-webfonts.css" type="text/s">
+    <link href="static/plugin-frameworks/bootstrap.min.css" rel="stylesheet">
+    <link href="static/plugin-frameworks/swiper.css" rel="stylesheet">
+    <link href="static/fonts/ionicons.css" rel="stylesheet">
+    <link href="static/common/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" href="#"><img src="static/images/heading_logo.png" alt="Logo"> <b style="font-size:35px; font-family:Georgia;">
+            Kelompok 3</b> </a>
+
+            <div class="right-area">
+                <h6> <a class="plr-20 color-white btn-fill-primary" href="#">Contact Number :08889384598935</a></h6>
+            </div>
+
+            <a class="menu-nav-icon" data-menu="#main-menu" href="#"> <i class="ion-navicon"> </i></a>
+
+            <ul class="main-menu font-mountainsre" id="main-menu">
+                <li><a href="#">DANY </a></li>
+                <li><a href="#">LUKI </a></li>
+                <li><a href="#">LUTHFI </a></li>
+            </ul>
+            <div class="clearfix"> </div>
+        </div>
+    </header>
+    {{template "body" .}}
+    <footer class="pb-50 pt-70 pos-relative">
+        <div class="post-top triangle-bottom"></div>
+        <div class="container-fluid">
+            <a href="#"> <img src="static/images/heading_logo.png" alt="logo" width="50" height="50"> </a>
+
+            <div class="pt-30">
+                <p class="underline-secondary"><b> Address : </b></p>
+                <p> Jl.KelompokGolang No.03, WeWork, Menara Astra</p>
+            </div>
+
+            <div class="pt-30">
+                <p class="underline-secondary"><b> Phone : </b></p>
+                <a href="Number :08889384598935"> 0982492739</a>
+            </div>
+
+            <div class="pt-30">
+                <p class="underline-secondary"><b> Email : </b></p>
+                <a href="mail to: Kelompok3mdb@gmail.com"> Kelompok3mdb@gmail.com</a>
+            </div>
+
+            <ul class="icon mt-30">
+                <li>
+                    <a href="#"> <i class="ion-social-pinterest"></i></a>
+                </li>
+                <li>
+                    <a href="#"> <i class="ion-social-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"> <i class="ion-social-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#"> <i class="ion-social-dribbble-outline"></i></a>
+                </li>
+                <li>
+                    <a href="#"> <i class="ion-social-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"> <i class="ion-social-linkedin"></i></a>
+                </li>
+            </ul>
+            <p class="color-light font-9 mt-50 mt-sm-30">
+                Copyright $copy;
+                <script>
+                    document.write(new Date().getUTCFullYear());
+                </script> All Right reserved | Dany Luki Luthfi <i class="ion-heart" aria-hidden="true"></i>
+                <a href="#" target="_blank">Love</a>
+            </p>
+        </div>
+    </footer>
+    <script src="static/plugin-frameworks/jquery-3.2.1.min.js"></script>
+    <script src="static/plugin-frameworks/bootstrap.min.js"></script>
+    <script src="static/plugin-frameworks/swiper.js"></script>
+    <script src="static/common/scripts.js"></script>
+</body>
+
+</html>
+{{end}}
